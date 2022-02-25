@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <!-- <link rel="stylesheet" href="css.css"> -->
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper">
+      <img src="https://drive.google.com/uc?export=view&id=1zmMRKkfb2lhKUxlKaG7FidmvIYDLUVbF" class="brand-logo"
+        style="vertical-align: middle; display: inline-block; height: 50%;">
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a href="#">INPUT CONTACT</a>
+        </li>
+        <li>
+          <a href="#">SEARCH</a>
+        </li>
+        <li>
+          <a href="#">DASHBOARD</a>
+        </li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li>
+          <a href="#">INPUT CONTACT</a>
+        </li>
+        <li>
+          <a href="#">SEARCH</a>
+        </li>
+        <li>
+          <a href="#">DASHBOARD</a>
+        </li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <!-- END NAVBAR -->
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- OVERVIEW -->
+      <div class="col s12 m12 l3">
+        <div class="list-group">
+          <h4 style="text-align-last: center; padding-left: 15px; font-weight: bold;">Overview</h4>
+          <ul class="collection">
+            <a href="#" class="collection-item">
+              <span class="new badge red accent-4" data-badge-caption="">212</span>
+              Contact Overdue
+            </a>
+            <a href="#" class="collection-item">
+              <span class="new badge red accent-4" data-badge-caption="">2</span>
+              Contact Due Soon
+            </a>
+            <a href="#" class="collection-item">
+              <span class="new badge red accent-4" data-badge-caption="">15</span>
+              Contacts on Track
+            </a>
+            <a href="#" class="collection-item">
+              <span class="new badge red accent-4" data-badge-caption="">1</span>
+              Contacts last 7 Days
+            </a>
+            <a href="#" class="collection-item">
+              <span class="new badge red accent-4" data-badge-caption="">1</span>
+              Postcards last 7 Days
+            </a>
+            <a href="#" class="collection-item">
+              <span class="new badge red accent-4" data-badge-caption="">1</span>
+              Real Estate Reviews last 7 Days
+            </a>
+          </ul>
+        </div>
+      </div>
+      <!-- END OVERVIEW -->
+
+      <!-- FLAGGED CONTANTS -->
+
+      <div class="col s12 m12 l9">
+        <div class="responsive-table table-status-sheet" style="padding-left: 10px; padding-right: 10px;">
+          <h4 style="text-align-last: center; padding-left: 15px; font-weight: bold;">Flaged Contacts</h4>
+          <table class="striped bordered centered">
+            <thead>
+              <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Email</th>
+                <th>Flag</th>
+              </tr>
+            </thead>
+            <tbody id="myTable">
+              <tr id="16">
+                <td>Aaron</td>
+                <td>Apel</td>
+                <td>adtrahentium@gmail.com</td>
+                <td>
+                  <button id="remove" class="waves-effect waves-red btn center red accent-4">Remove Flag<i
+                      class="material-icons right">remove_circle</i>
+                  </button>
+                </td>
+              </tr>
+              <tr id="18">
+                <td>John & Julie</td>
+                <td>Barstow</td>
+                <td>juliebar428@gmail.com</td>
+                <td>
+                  <button id="remove" class="waves-effect waves-light btn center red accent-4">Remove Flag <i
+                      class="material-icons right">remove_circle</i></button>
+                </td>
+              </tr>
+              <tr id="20">
+                <td>Fadi</td>
+                <td>Bedros</td>
+                <td>fbedros@yahoo.com</td>
+                <td>
+                  <button id="remove" class="waves-effect waves-light btn center red accent-4">Remove Flag <i
+                      class="material-icons right">remove_circle</i></button>
+                </td>
+              </tr>
+              <tr id="22">
+                <td>Josep</td>
+                <td>Bedros</td>
+                <td>jnbedros@yahoo.com</td>
+                <td>
+                  <button id="remove" class="waves-effect waves-light btn center red accent-4">Remove Flag <i
+                      class="material-icons right">remove_circle</i></button>
+                </td>
+              </tr>
+              <tr id="24">
+                <td>Nick</td>
+                <td>Beneke</td>
+                <td>nick@vexspa.com</td>
+                <td>
+                  <button id="remove" class="waves-effect waves-light btn center red accent-4">Remove Flag <i
+                      class="material-icons right">remove_circle</i></button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <!-- END FLAGED CONTACTS -->
+
+    <!-- contact list -->
+    <div class="row">
+      <div class="card card-table">
+        <div class="card-content">
+          <div class="responsive-table table-status-sheet" style=" padding-right: 10px;">
+            <h4 style="text-align-last: center; padding-left: 15px; font-weight: bold;">Contact List (From Oldest to
+              Newest)</h4>
+            <table class="striped bordered centered">
+              <thead>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                  <th>Last Contact</th>
+                  <th>Send Mail</th>
+                </tr>
+              </thead>
+              <tbody id="myTable2">
+                <tr id="185">
+                  <td>Marcia</td>
+                  <td>Rozell</td>
+                  <td>3/20/2019</td>
+                  <td>mrozell3943@gmail.com</td>
+                  <td>
+                    <a href="#modal" class="waves-effect waves-light btn center modal-trigger red accent-4">
+                      Contact
+                      <i class="material-icons right">email</i>
+                    </a>
+                  </td>
+                </tr>
+                <tr id="185">
+                  <td>Marcia</td>
+                  <td>Rozell</td>
+                  <td>3/20/2019</td>
+                  <td>mrozell3943@gmail.com</td>
+                  <td>
+                    <a href="#modal" class="waves-effect waves-light btn center modal-trigger red accent-4">
+                      Contact
+                      <i class="material-icons right">email</i>
+                    </a>
+                  </td>
+                </tr>
+                <tr id="185">
+                  <td>Marcia</td>
+                  <td>Rozell</td>
+                  <td>3/20/2019</td>
+                  <td>mrozell3943@gmail.com</td>
+                  <td>
+                    <a href="#modal" class="waves-effect waves-light btn center modal-trigger red accent-4">
+                      Contact
+                      <i class="material-icons right">email</i>
+                    </a>
+                  </td>
+                </tr>
+                <tr id="185">
+                  <td>Marcia</td>
+                  <td>Rozell</td>
+                  <td>3/20/2019</td>
+                  <td>mrozell3943@gmail.com</td>
+                  <td>
+                    <a href="#modal" class="waves-effect waves-light btn center modal-trigger red accent-4">
+                      Contact
+                      <i class="material-icons right">email</i>
+                    </a>
+                  </td>
+                </tr>
+                <tr id="185">
+                  <td>Marcia</td>
+                  <td>Rozell</td>
+                  <td>3/20/2019</td>
+                  <td>mrozell3943@gmail.com</td>
+                  <td>
+                    <a href="#modal" class="waves-effect waves-light btn center modal-trigger red accent-4">
+                      Contact
+                      <i class="material-icons right">email</i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end contact list -->
+
+    <!-- real estet reviw -->
+    <div class="row">
+      <div class="card card-table">
+        <div class="card-content">
+          <div class="responsive-table table-status-sheet" style=" padding-right: 10px;">
+            <h4 style="text-align-last: center; padding-left: 15px; font-weight: bold;">Real Estate Review</h4>
+            <table class="striped bordered centered">
+              <thead>
+                <tr>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                  <th>Last Contact</th>
+                  <th>Send Mail</th>
+                </tr>
+              </thead>
+              <tbody id="myTable2">
+                <tr id="185">
+                  <td>Marcia</td>
+                  <td>Rozell</td>
+                  <td>3/20/2019</td>
+                  <td>mrozell3943@gmail.com</td>
+                  <td>
+                    <a href="#modal" class="waves-effect waves-light btn center modal-trigger red accent-4">
+                      Contact
+                      <i class="material-icons right">email</i>
+                    </a>
+                  </td>
+                </tr>
+                <tr id="185">
+                  <td>Marcia</td>
+                  <td>Rozell</td>
+                  <td>3/20/2019</td>
+                  <td>mrozell3943@gmail.com</td>
+                  <td>
+                    <a href="#modal" class="waves-effect waves-light btn center modal-trigger red accent-4">
+                      Contact
+                      <i class="material-icons right">email</i>
+                    </a>
+                  </td>
+                </tr>
+                <tr id="185">
+                  <td>Marcia</td>
+                  <td>Rozell</td>
+                  <td>3/20/2019</td>
+                  <td>mrozell3943@gmail.com</td>
+                  <td>
+                    <a href="#modal" class="waves-effect waves-light btn center modal-trigger red accent-4">
+                      Contact
+                      <i class="material-icons right">email</i>
+                    </a>
+                  </td>
+                </tr>
+                <tr id="185">
+                  <td>Marcia</td>
+                  <td>Rozell</td>
+                  <td>3/20/2019</td>
+                  <td>mrozell3943@gmail.com</td>
+                  <td>
+                    <a href="#modal" class="waves-effect waves-light btn center modal-trigger red accent-4">
+                      Contact
+                      <i class="material-icons right">email</i>
+                    </a>
+                  </td>
+                </tr>
+                <tr id="185">
+                  <td>Marcia</td>
+                  <td>Rozell</td>
+                  <td>3/20/2019</td>
+                  <td>mrozell3943@gmail.com</td>
+                  <td>
+                    <a href="#modal" class="waves-effect waves-light btn center modal-trigger red accent-4">
+                      Contact
+                      <i class="material-icons right">email</i>
+                    </a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end real estet review -->
+
+  </div>
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+
+</html>

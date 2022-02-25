@@ -1,0 +1,39 @@
+.icon-block {
+  padding: 0 15px;
+}
+
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+.nav-wrapper a{
+  color: black !important;
+}
+.nav-wrapper img{
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.nav-wrapper ul li a{
+  font-weight: bold;
+}
+
+table {
+  display: block;
+  overflow-y: scroll;
+  height: 250px;
+}
+
+thead tr th {
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  color: #fff;
+  background-color:black;
+  width: 90vh;
+}
+
+table tbody thead {
+  display: table;
+  width: 100%;
+}
